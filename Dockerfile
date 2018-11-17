@@ -1,4 +1,4 @@
-# VERSION 1.10.0-4
+# VERSION 1.10.0-5
 # AUTHOR: Matthieu "Puckel_" Roisil
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t puckel/docker-airflow .
@@ -33,8 +33,6 @@ RUN set -ex \
         libsasl2-dev \
         libssl-dev \
         libffi-dev \
-        libblas-dev \
-        liblapack-dev \
         libpq-dev \
         git \
     ' \
@@ -46,8 +44,6 @@ RUN set -ex \
         build-essential \
         python3-pip \
         python3-requests \
-        mysql-client \
-        mysql-server \
         default-libmysqlclient-dev \
         apt-utils \
         curl \
